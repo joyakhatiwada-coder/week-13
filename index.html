@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jaya Laxmi | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page-container">
+
+        <!-- Navigation -->
+        <nav class="navigation">
+
+            <div class="nav-links">
+                <a href="#profile">Profile</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About Me</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#gallery">Gallery</a>
+            </div>
+
+            <!-- Week 11: Dark Mode -->
+            <button id="theme-toggle" type="button">
+                Toggle Dark Mode
+            </button>
+
+        </nav>
+
+
+        <!-- Main Content -->
+        <div class="content-wrapper">
+
+            <!-- CARD 1: PROFILE AND CONTACT -->
+            <section class="business-card" id="profile">
+
+                <div class="profile">
+
+                    <p class="label">ONLINE BUSINESS CARD</p>
+
+                    <h1 id="profile-name">JAYA LAXMI</h1>
+
+                    <p class="card-info">
+                        Computer Engineering Student
+                    </p>
+
+                    <p class="location">Seoul, Korea</p>
+
+                    <img
+                        class="profile-image"
+                        src="profile.jpg"
+                        alt="Profile photo of Jaya Laxmi"
+                    >
+
+                </div>
+
+                <hr>
+
+                <!-- Contact Form -->
+                <section class="contact" id="contact">
+
+                    <h2>Get in Touch</h2>
+
+                    <form class="contact-form">
+
+                        <div class="name-fields">
+
+                            <input
+                                type="text"
+                                name="firstName"
+                                placeholder="First Name"
+                                aria-label="First Name"
+                                required
+                            >
+
+                            <input
+                                type="text"
+                                name="lastName"
+                                placeholder="Last Name"
+                                aria-label="Last Name"
+                                required
+                            >
+
+                        </div>
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email Address"
+                            aria-label="Email Address"
+                            required
+                        >
+
+                        <button type="submit">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                    <p class="form-note">
+                        Please note: This is a demonstration contact form.
+                    </p>
+
+                </section>
+
+                <footer>
+                    <p>Software Engineering • Web Development</p>
+                </footer>
+
+            </section>
+
+
+            <!-- CARD 2: ABOUT, HOBBIES AND GALLERY -->
+            <section class="business-card about-card" id="about">
+
+                <!-- About Me -->
+                <div class="profile">
+
+                    <p class="label">GET TO KNOW ME</p>
+
+                    <h2 class="card-heading">About Me</h2>
+
+                    <p class="card-info">
+                        I am a Computer Engineering student interested
+                        in software engineering and web development.
+                        I enjoy learning new technologies, improving
+                        my programming knowledge, and exploring
+                        creative ways to use technology.
+                    </p>
+
+                </div>
+
+                <hr>
+
+                <!-- Hobbies -->
+                <section class="about-details" id="hobbies">
+
+                    <h3>My Interests & Hobbies</h3>
+
+                    <p class="section-description">
+                        Some activities and subjects I enjoy exploring:
+                    </p>
+
+                    <ul id="hobby-list">
+                        <!-- JavaScript generates hobby items here -->
+                    </ul>
+
+                </section>
+
+                <hr>
+
+                <!-- Photo Gallery -->
+                <section class="gallery-section" id="gallery">
+
+                    <p class="label">MOMENTS & MEMORIES</p>
+
+                    <h3>My Photo Gallery</h3>
+
+                    <p class="section-description">
+                        A collection of five selected photos.
+                    </p>
+
+                    <div class="gallery-frame">
+
+                        <img
+                            id="gallery-image"
+                            src="first.jpg"
+                            alt="Gallery photo 1"
+                        >
+
+                    </div>
+
+                    <p id="photo-counter" aria-live="polite">
+                        Photo 1 of 5
+                    </p>
+
+                    <!-- Week 13: Synchronized Description -->
+                    <p id="photo-description" aria-live="polite">
+                        A beautiful first memory.
+                    </p>
+
+                    <div class="gallery-controls">
+
+                        <button id="previous-photo" type="button">
+                            Previous
+                        </button>
+
+                        <button id="next-photo" type="button">
+                            Next
+                        </button>
+
+                    </div>
+
+                </section>
+
+                <footer>
+                    <p>Learning • Creating • Growing</p>
+                </footer>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

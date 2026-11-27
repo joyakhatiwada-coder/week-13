@@ -1,0 +1,668 @@
+
+/* ========================================
+   GUCCI-INSPIRED LUXURY COLOR PALETTE
+======================================== */
+
+:root {
+    --green: #143D2B;
+    --red: #9E1B32;
+    --gold: #C6A15B;
+    --black: #111111;
+    --white: #FFFFFF;
+    --gray: #B8B8B8;
+    --light-text: #E0E0E0;
+    --card-green: #102F22;
+}
+
+
+/* ========================================
+   GLOBAL RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    min-height: 100vh;
+    padding: 30px 20px;
+
+    background-color: var(--black);
+    color: var(--white);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 16px 22px;
+
+    background-color: var(--green);
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.navigation a {
+    display: block;
+    padding: 8px 12px;
+
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+#theme-toggle {
+    min-height: 44px;
+    padding: 10px 16px;
+
+    background-color: var(--red);
+    color: var(--white);
+
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #7F1427;
+}
+
+
+/* ========================================
+   MAIN TWO-CARD LAYOUT
+======================================== */
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    gap: 24px;
+    width: 100%;
+}
+
+.business-card {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1 1 400px;
+    min-width: 0;
+    max-width: 520px;
+
+    padding: 32px;
+
+    background-color: var(--green);
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+
+    transition: background-color 0.3s ease;
+}
+
+
+/* ========================================
+   PROFILE INFORMATION
+======================================== */
+
+.profile {
+    text-align: center;
+}
+
+.label {
+    margin-bottom: 14px;
+
+    color: var(--gold);
+
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#profile-name {
+    margin-bottom: 8px;
+
+    color: var(--white);
+
+    font-size: 32px;
+    letter-spacing: 0.5px;
+
+    overflow-wrap: anywhere;
+}
+
+.card-heading {
+    margin-bottom: 12px;
+
+    color: var(--white);
+    font-size: 28px;
+}
+
+.card-info {
+    color: var(--light-text);
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.location {
+    margin-top: 5px;
+
+    color: var(--gold);
+    font-size: 14px;
+}
+
+
+/* ========================================
+   PROFILE IMAGE
+======================================== */
+
+.profile-image {
+    display: block;
+
+    width: 250px;
+    max-width: 100%;
+    height: 300px;
+
+    margin: 20px auto 0;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: 2px solid var(--gold);
+    border-radius: 8px;
+}
+
+
+/* ========================================
+   DIVIDER
+======================================== */
+
+hr {
+    width: 100%;
+    margin: 28px 0;
+
+    border: none;
+    border-top: 1px solid var(--gold);
+}
+
+
+/* ========================================
+   CONTACT SECTION
+======================================== */
+
+.contact h2 {
+    margin-bottom: 16px;
+
+    color: var(--gold);
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 20px;
+
+    background-color: var(--card-green);
+    border: 1px solid var(--gold);
+    border-radius: 6px;
+}
+
+.name-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.contact-form input {
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+
+    padding: 12px;
+
+    background-color: var(--black);
+    color: var(--white);
+
+    border: 1px solid #527061;
+    border-radius: 4px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.contact-form input::placeholder {
+    color: var(--gray);
+}
+
+.contact-form input:focus {
+    outline: 2px solid var(--gold);
+    outline-offset: 1px;
+}
+
+.contact-form button {
+    width: 100%;
+    min-height: 44px;
+
+    padding: 13px;
+    margin-top: 4px;
+
+    background-color: var(--red);
+    color: var(--white);
+
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #7F1427;
+}
+
+.form-note {
+    margin-top: 10px;
+
+    color: var(--gray);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   ABOUT ME AND HOBBIES
+======================================== */
+
+.about-details h3,
+.gallery-section h3 {
+    margin-bottom: 14px;
+
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.section-description {
+    margin-bottom: 14px;
+
+    color: var(--light-text);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.about-details ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 0;
+    list-style: none;
+
+    color: var(--light-text);
+}
+
+.about-details li {
+    padding: 12px 15px;
+
+    background-color: var(--card-green);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    transition: background-color 0.3s ease;
+}
+
+.about-details li:hover {
+    background-color: #1B5038;
+}
+
+
+/* ========================================
+   WEEK 12 AND 13: PHOTO GALLERY
+======================================== */
+
+.gallery-section {
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+
+    padding: 10px;
+
+    background-color: #0B241A;
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+#gallery-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+#photo-counter {
+    margin: 14px 0 8px;
+
+    color: var(--gold);
+    font-size: 14px;
+}
+
+#photo-description {
+    min-height: 24px;
+    margin-bottom: 16px;
+
+    color: var(--light-text);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.gallery-controls button {
+    min-width: 110px;
+    min-height: 44px;
+
+    padding: 11px 16px;
+
+    background-color: var(--red);
+    color: var(--white);
+
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.gallery-controls button:hover {
+    background-color: #7F1427;
+}
+
+
+/* ========================================
+   BUTTON FOCUS ACCESSIBILITY
+======================================== */
+
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    margin-top: auto;
+    padding-top: 24px;
+
+    text-align: center;
+    color: #D2C7B5;
+
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   WEEK 11: DARK MODE
+======================================== */
+
+body.dark-mode {
+    background-color: #050505;
+}
+
+body.dark-mode .navigation {
+    background-color: #111111;
+}
+
+body.dark-mode .business-card {
+    background-color: #111111;
+}
+
+body.dark-mode .contact-form {
+    background-color: #080808;
+}
+
+body.dark-mode .contact-form input {
+    background-color: #050505;
+    color: var(--white);
+}
+
+body.dark-mode .about-details ul {
+    color: #E0E0E0;
+}
+
+body.dark-mode .about-details li {
+    background-color: #080808;
+}
+
+body.dark-mode .gallery-frame {
+    background-color: #050505;
+}
+
+body.dark-mode .section-description,
+body.dark-mode #photo-description {
+    color: #E0E0E0;
+}
+
+
+/* ========================================
+   WEEK 13: MOBILE RESPONSIVE DESIGN
+   MOBILE: 768px AND BELOW
+======================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 16px 12px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+
+        padding: 14px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: stretch;
+
+        width: 100%;
+        gap: 5px;
+    }
+
+    .navigation a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        min-height: 44px;
+        text-align: center;
+    }
+
+    #theme-toggle {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .business-card {
+        flex: 1 1 auto;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        padding: 28px 22px;
+    }
+
+    #profile-name {
+        font-size: 1.6rem;
+    }
+
+    .card-heading {
+        font-size: 25px;
+    }
+
+    .profile-image {
+        max-width: 100%;
+    }
+
+    .gallery-frame {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-form button,
+    .gallery-controls button {
+        min-height: 44px;
+    }
+}
+
+
+/* ========================================
+   WEEK 13: SMALL MOBILE SCREENS
+   450px AND BELOW
+======================================== */
+
+@media (max-width: 450px) {
+
+    body {
+        padding: 12px 10px;
+    }
+
+    .business-card {
+        padding: 22px 16px;
+    }
+
+    #profile-name {
+        font-size: 1.6rem;
+    }
+
+    .card-heading {
+        font-size: 23px;
+    }
+
+    .name-fields {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .contact-form {
+        padding: 14px;
+    }
+
+    .profile-image {
+        width: 220px;
+        height: 270px;
+    }
+
+    .gallery-frame {
+        height: 240px;
+    }
+
+    .gallery-controls {
+        gap: 8px;
+    }
+
+    .gallery-controls button {
+        min-width: 0;
+        flex: 1;
+        padding: 11px 8px;
+    }
+}
